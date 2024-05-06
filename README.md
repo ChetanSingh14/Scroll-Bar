@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+Scroll Component
+The Scroll component is a React component designed to allow horizontal scrolling within a container. It provides buttons to scroll left and right through a list of items.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Horizontal Scroll: Allows users to scroll horizontally through a list of items.
+Scroll Buttons: Provides buttons to scroll left and right.
+Responsive: Designed to work well on different screen sizes.
+Usage
+To use the Scroll component:
 
-## Available Scripts
+Import the Scroll component into your React application.
+Place the Scroll component where you want horizontal scrolling functionality.
+Pass an array of items to the Scroll component as children.
+Use the provided buttons to scroll left and right through the items.
+jsx
+Copy code
+import React from 'react';
+import Scroll from './Scroll';
 
-In the project directory, you can run:
+function App() {
+  return (
+    <div>
+      <Scroll />
+    </div>
+  );
+}
 
-### `npm start`
+export default App;
+Props
+The Scroll component does not accept any props.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Installation
+To install the Scroll component in your React project, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Install the component package from npm:
+bash
+Copy code
+npm install scroll-component
+Import the Scroll component into your project and use it as shown above.
+Dependencies
+React: ^16.8.0 or higher
+Styles
+The Scroll component uses CSS modules for styling. Ensure that your project supports CSS modules or adjust the styling as needed.
 
-### `npm test`
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
